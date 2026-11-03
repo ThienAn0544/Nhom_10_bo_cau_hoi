@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bạn hợp thể loại game nào?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<canvas id="fx"></canvas>
+
+<main id="app">
+  <section id="start" class="screen active">
+    <div class="logo">🎮</div>
+    <h1>BẠN HỢP THỂ LOẠI<br><span>GAME NÀO?</span></h1>
+    <p>Trả lời 12 câu hỏi để mở khóa class game của riêng bạn!</p>
+    <button class="btn" id="startBtn">▶ BẮT ĐẦU</button>
+  </section>
+
+  <section id="quiz" class="screen">
+    <div class="hud">
+      <span id="lvl">LV 1/12</span>
+      <div class="xp"><div id="xpBar"></div></div>
+      <span id="xpTxt">0 XP</span>
+    </div>
+    <div class="card" id="card">
+      <h2 id="qText"></h2>
+      <div id="opts"></div>
+    </div>
+  </section>
+
+  <section id="loading" class="screen">
+    <div class="spinner"></div>
+    <h2 id="loadTxt">Đang phân tích...</h2>
+    <div class="xp big"><div id="loadBar"></div></div>
+  </section>
+
+  <section id="result" class="screen">
+    <p class="small">🏆 CLASS ĐƯỢC MỞ KHÓA 🏆</p>
+    <div id="rEmoji" class="r-emoji"></div>
+    <h1 id="rName"></h1>
+    <p id="rDesc" class="desc"></p>
+    <div id="bars"></div>
+    <h3>🎯 Game dành cho bạn</h3>
+    <div id="games"></div>
+    <button class="btn" id="again">↻ CHƠI LẠI</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
